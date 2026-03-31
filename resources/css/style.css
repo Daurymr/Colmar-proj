@@ -29,7 +29,7 @@ header {
     gap: 16px;
 }
 
-a {
+.desktop-nav a {
     text-decoration: none;
     color: darkgray;
     font-weight: bold;
@@ -52,10 +52,9 @@ a {
     align-items: center;
 }
 
-img {
+.hero img {
     width: 60%;
-    margin: 0;
-    padding: 0;
+
 }
 
 .hero-content {
@@ -76,3 +75,119 @@ img {
     color: #6a6565;
     font-weight: 500;
 }
+
+/* Information Section Desktop*/
+
+
+.information {
+    display: flex;
+    background-color: #fff;
+    padding: 32px 24px;
+}
+
+.information-main {
+    width: 60%;
+    padding-right: 24px;
+    border-right: 1px solid #898686;
+}
+
+.information-main img {
+    width: 100%;
+}
+
+.information h2 {
+    font-size: 1.8rem;
+    color: #343333;
+    font-weight: 900;
+    margin-top: 32px;
+    margin-bottom: 24px;
+}
+
+.information-main p {
+    font-size: 1.2rem;
+    color: #6a6565;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.information-side {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.information-side-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #898686;
+    padding: 16px 0;
+}
+
+.info-img-container {
+    height: auto;
+    width: 35%;
+}
+
+.info-img-container img {
+    width: 100%;
+    height: auto;
+}
+
+.info-description {
+    width: 65%;
+    padding-left: 16px;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .information-mobile {
+        display: none;
+    }
+}
+
+
+/* Information Section Mobile */
+
+
+
+
+
+/* Courses Section */
+
+.courses {
+    background-color: lightgray;
+    padding: 32px 72px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.courses h2 {
+    font-size: 1.8rem;
+    color: #343333;
+    font-weight: 900;
+    margin-bottom: 32px;
+}
+
+
+.courses-desktop {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    margin: 32px 0;
+    max-width: 300px;
+    flex-shrink: 1;
+    padding-bottom: 16px;
+}
+
+.card img {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
